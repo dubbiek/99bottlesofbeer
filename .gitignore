@@ -1,0 +1,11 @@
+# Whitelists .gitignore, .cpp, .hpp, .h files
+
+# Pattern to ignore all files
+*
+
+# Pattern to not ignore .gitignore
+!.gitignore
+# Patterns to not ignore any .cpp, .hpp, .h files
+!*.cpp
+!*.hpp
+!*.h

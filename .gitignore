@@ -9,3 +9,7 @@
 !*.cpp
 !*.hpp
 !*.h
+
+# Patterns to not ignore makefile and README doc
+!makefile
+!README.md

@@ -22,7 +22,7 @@ Beer::Beer()
 //Beer(string,string,string,bool)
 //Constructor that populates all fields of the
 //Beer object.
-Beer::Beer(string number, string name, string brewer, bool activity)
+Beer::Beer(string number, string name, string brewer, string activity)
 {
 	//Set member variables as specified by the inputs to the constructor.
 	setBeerNumber(number);
@@ -109,7 +109,10 @@ void Beer::setBeerBrewer(string newBrewer)
 
 //setBeerActivity(bool)
 //Sets the beerActivity
-void Beer::setBeerActivity(bool newActivity)
+bool Beer::setBeerActivity(string newActivity)
 {
-	beerActivity = newActivity;
+    bool flag = false;
+    if (newActivity[0] == 'Y')
+        flag = true;
+    return flag;
 }//setBeerActivity

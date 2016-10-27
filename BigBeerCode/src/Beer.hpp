@@ -2,7 +2,8 @@
 
 #ifndef BEER_HPP_
 #define BEER_HPP_
-
+#include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -20,7 +21,7 @@ class Beer
 		Beer();
 		//Constructor that populates all fields of the
 		//Beer object.
-		Beer(string, string, string, bool);
+		Beer(string, string, string, string);
 
 		//Destructor
 		virtual ~Beer();
@@ -39,7 +40,7 @@ class Beer
 		void setBeerNumber(string);
 		void setBeerName(string);
 		void setBeerBrewer(string);
-		void setBeerActivity(bool);
+		bool setBeerActivity(string);
 
 };
 

@@ -5,10 +5,11 @@
 
 # Pattern to not ignore .gitignore
 !.gitignore
-# Patterns to not ignore any .cpp, .hpp, .h files
+# Patterns to not ignore any .cpp, .hpp, .h, .csv files
 !*.cpp
 !*.hpp
 !*.h
+!*.csv
 
 # Patterns to not ignore makefile and README doc
 !makefile
